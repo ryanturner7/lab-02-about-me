@@ -11,6 +11,7 @@ for (var attempts = 4; attempts > 0 && notDone; attempts--){
     console.log(guess);
     if (guess == correctNumber){
       alert('You guessed the correct number!');
+      numCorrect++;
       notDone = false;
     } else if (guess > 5 ){
         alert('Too high, guess again.');
@@ -23,6 +24,7 @@ for (var attempts = 4; attempts > 0 && notDone; attempts--){
     }
 }
 var correctAnswer = ['Supra', 'Eclipse', 'M3', 'SLS AMG'];
+var numCorrect = 0;
 var notDone = true;
 var guess;
 for (var attempts = 6; attempts > 0 && notDone; attempts--){
@@ -31,6 +33,7 @@ for (var attempts = 6; attempts > 0 && notDone; attempts--){
   for (var i=0; i < correctAnswer.length && notDone; i++ ){
     if(guess.trim().toLowerCase() === correctAnswer[i].trim().toLowerCase()){
       userResponse = 'You are correct';
+      numCorrect++;
       notDone = false;
     } else if (attempts === 1){
       userResponse = 'You are out of guesses!';
@@ -42,6 +45,7 @@ var vegan = prompt('Do you think Ryan is vegan?');
 console.log('My answer is ', vegan);
 if (vegan.trim().toLowerCase() == 'no') {
   alert('You are correct!');
+  numCorrect++;
 } else {
   alert('You dont know his life!');
 }
@@ -51,6 +55,7 @@ if (siblings.trim().toLowerCase() == 'yes') {
   alert('Close but no cigar!');
 } else {
   alert('You are correct!');
+  numCorrect++;
 }
 var children = prompt('Does Ryan have children?');
 console.log('My answer is', children);
@@ -58,11 +63,13 @@ if (children.trim().toLowerCase() == 'yes') {
   alert('You dont know him well!');
 } else {
   alert('You remembered!');
+  numCorrect++;
 }
 var music = prompt('Does Ryan love music?');
 console.log('my answer is', music);
 if (music.trim().toLowerCase() == 'yes') {
   alert('In fact, music is his life!');
+  numCorrect++;
 } else {
   alert('Everybody loves music!');
 }
@@ -70,6 +77,8 @@ var coding = prompt('Is Ryan sufficient at coding?');
 console.log('my answer is', coding);
 if (coding.trim().toLowerCase() == 'yes') {
   alert('You are absolutely correct.');
+  numCorrect++;
 } else {
   alert('Incorrect, better than you!');
 }
+ alert('You got ' + numCorrect + ' out of 7 correct!');
