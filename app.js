@@ -81,6 +81,7 @@ if (children.trim().toLowerCase() == 'yes') {
 }
 }
 
+function questionSix() {
 var music = prompt('Does Ryan love music?');
 console.log('my answer is', music);
 if (music.trim().toLowerCase() == 'yes') {
@@ -89,6 +90,8 @@ if (music.trim().toLowerCase() == 'yes') {
 } else {
   alert('Everybody loves music!');
 }
+}
+
 var coding = prompt('Is Ryan sufficient at coding?');
 console.log('my answer is', coding);
 if (coding.trim().toLowerCase() == 'yes') {
@@ -103,5 +106,6 @@ questionTwo();
 questionThree();
 questionFour();
 questionFive();
+questionSix();
 
  alert('You got ' + numCorrect + ' out of 7 correct!');
