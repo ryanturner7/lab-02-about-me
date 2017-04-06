@@ -28,6 +28,7 @@ function questionOne() {
   }
 }
 
+function questionTwo() {
 var correctAnswer = ['Supra', 'Eclipse', 'M3', 'SLS AMG'];
 var notDone = true;
 var guess;
@@ -45,6 +46,8 @@ for (var attempts = 6; attempts > 0 && notDone; attempts--){
   }
   alert(userResponse)
   }
+}
+
 var vegan = prompt('Do you think Ryan is vegan?');
 console.log('My answer is ', vegan);
 if (vegan.trim().toLowerCase() == 'no') {
@@ -87,5 +90,6 @@ if (coding.trim().toLowerCase() == 'yes') {
 }
 
 questionOne();
+questionTwo();
 
  alert('You got ' + numCorrect + ' out of 7 correct!');
