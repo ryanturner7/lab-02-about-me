@@ -2,28 +2,32 @@
 
 // TODO: I want to prompt the user to guess the number 12
 // and get four chances
-var correctNumber = 5;
-var notDone = true;
-var guess;
 var numCorrect = 0;
-for (var attempts = 4; attempts > 0 && notDone; attempts--){
-    guess = prompt('How many miles did I walk yesterday?');//get user input
-    guess = parseInt(guess); //convert user input to number
-    console.log(guess);
-    if (guess == correctNumber){
-      alert('You guessed the correct number!');
-      numCorrect++;
-      notDone = false;
-    } else if (guess > 5 ){
-        alert('Too high, guess again.');
-      } else if (guess < 5 ){
-        alert('Too low, guess again.');
-    } else if (guess === 1){
-        alert('You are out of guesses!');
-      } else {
-      alert('Guess again.');
-    }
+
+function questionOne() {
+  var correctNumber = 5;
+  var notDone = true;
+  var guess;
+  for (var attempts = 4; attempts > 0 && notDone; attempts--){
+      guess = prompt('How many miles did I walk yesterday?');//get user input
+      guess = parseInt(guess); //convert user input to number
+      console.log(guess);
+      if (guess == correctNumber){
+        alert('You guessed the correct number!');
+        numCorrect++;
+        notDone = false;
+      } else if (guess > 5 ){
+          alert('Too high, guess again.');
+        } else if (guess < 5 ){
+          alert('Too low, guess again.');
+      } else if (guess === 1){
+          alert('You are out of guesses!');
+        } else {
+        alert('Guess again.');
+      }
+  }
 }
+
 var correctAnswer = ['Supra', 'Eclipse', 'M3', 'SLS AMG'];
 var notDone = true;
 var guess;
@@ -81,4 +85,7 @@ if (coding.trim().toLowerCase() == 'yes') {
 } else {
   alert('Incorrect, better than you!');
 }
+
+questionOne();
+
  alert('You got ' + numCorrect + ' out of 7 correct!');
