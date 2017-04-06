@@ -59,6 +59,7 @@ if (vegan.trim().toLowerCase() == 'no') {
 }
 }
 
+function questionFour() {
 var siblings = prompt('Does Ryan have siblings?');
 console.log('My answer is', siblings);
 if (siblings.trim().toLowerCase() == 'yes') {
@@ -67,6 +68,8 @@ if (siblings.trim().toLowerCase() == 'yes') {
   alert('You are correct!');
   numCorrect++;
 }
+}
+
 var children = prompt('Does Ryan have children?');
 console.log('My answer is', children);
 if (children.trim().toLowerCase() == 'yes') {
@@ -95,5 +98,6 @@ if (coding.trim().toLowerCase() == 'yes') {
 questionOne();
 questionTwo();
 questionThree();
+questionFour();
 
  alert('You got ' + numCorrect + ' out of 7 correct!');
