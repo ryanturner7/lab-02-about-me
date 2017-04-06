@@ -48,6 +48,7 @@ for (var attempts = 6; attempts > 0 && notDone; attempts--){
   }
 }
 
+function questionThree(){
 var vegan = prompt('Do you think Ryan is vegan?');
 console.log('My answer is ', vegan);
 if (vegan.trim().toLowerCase() == 'no') {
@@ -56,6 +57,8 @@ if (vegan.trim().toLowerCase() == 'no') {
 } else {
   alert('You dont know his life!');
 }
+}
+
 var siblings = prompt('Does Ryan have siblings?');
 console.log('My answer is', siblings);
 if (siblings.trim().toLowerCase() == 'yes') {
@@ -91,5 +94,6 @@ if (coding.trim().toLowerCase() == 'yes') {
 
 questionOne();
 questionTwo();
+questionThree();
 
  alert('You got ' + numCorrect + ' out of 7 correct!');
