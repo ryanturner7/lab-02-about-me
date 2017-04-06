@@ -5,6 +5,7 @@
 var correctNumber = 5;
 var notDone = true;
 var guess;
+var numCorrect = 0;
 for (var attempts = 4; attempts > 0 && notDone; attempts--){
     guess = prompt('How many miles did I walk yesterday?');//get user input
     guess = parseInt(guess); //convert user input to number
@@ -24,7 +25,6 @@ for (var attempts = 4; attempts > 0 && notDone; attempts--){
     }
 }
 var correctAnswer = ['Supra', 'Eclipse', 'M3', 'SLS AMG'];
-var numCorrect = 0;
 var notDone = true;
 var guess;
 for (var attempts = 6; attempts > 0 && notDone; attempts--){
