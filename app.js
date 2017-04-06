@@ -48,7 +48,7 @@ for (var attempts = 6; attempts > 0 && notDone; attempts--){
   }
 }
 
-function questionThree(){
+function questionThree() {
 var vegan = prompt('Do you think Ryan is vegan?');
 console.log('My answer is ', vegan);
 if (vegan.trim().toLowerCase() == 'no') {
@@ -70,6 +70,7 @@ if (siblings.trim().toLowerCase() == 'yes') {
 }
 }
 
+function questionFive() {
 var children = prompt('Does Ryan have children?');
 console.log('My answer is', children);
 if (children.trim().toLowerCase() == 'yes') {
@@ -78,6 +79,8 @@ if (children.trim().toLowerCase() == 'yes') {
   alert('You remembered!');
   numCorrect++;
 }
+}
+
 var music = prompt('Does Ryan love music?');
 console.log('my answer is', music);
 if (music.trim().toLowerCase() == 'yes') {
@@ -99,5 +102,6 @@ questionOne();
 questionTwo();
 questionThree();
 questionFour();
+questionFive();
 
  alert('You got ' + numCorrect + ' out of 7 correct!');
